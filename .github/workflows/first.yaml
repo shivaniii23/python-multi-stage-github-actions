@@ -1,0 +1,22 @@
+name: My First GitHub Actions
+
+on: [push]
+
+jobs:
+  action-job:
+    runs-on: self-hosted
+    steps:
+    - name: clone
+      uses: shivaniii23/python_multi_stage@main
+      with:
+        owner: 'shivaniii23'
+        repository: 'python_mult_stage'
+
+    - name: Install dependencies
+      run: |
+        cd python_multi_stage
+        ls -la
+
+    - name: Run tests
+      run: |
+        docker build -t multi_stage -f Dockerfile_with_multi_stage .
