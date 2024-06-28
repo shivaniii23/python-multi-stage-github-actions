@@ -6,17 +6,7 @@ jobs:
   action-job:
     runs-on: self-hosted
     steps:
-    - name: clone
-      uses: shivaniii23/python_multi_stage@main
-      with:
-        owner: 'shivaniii23'
-        repository: 'python_multi_stage'
-
-    - name: Install dependencies
+    - uses: actions/checkout@v1
+    - name: Build and push image
       run: |
-        cd python_multi_stage
-        ls -la
-
-#    - name: Run tests
-#      run: |
-#        docker build -t multi_stage -f Dockerfile_with_multi_stage .
+        docker build -t multi_stage -f Dockerfile_with_multi_stage .
