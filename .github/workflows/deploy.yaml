@@ -58,7 +58,7 @@ jobs:
           context: "{{defaultContext}}"
           file: ./Dockerfile_with_multi_stage
           push: true
-          tags: ${{ github.sha }}
+          tags: " shivanij2304/python-multi-stage-github-actions: ${{github.sha }}"
           labels: ${{ steps.meta.outputs.labels }}
   stop-runner:
     name: Stop self-hosted EC2 runner
