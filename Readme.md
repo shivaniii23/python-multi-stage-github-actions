@@ -6,7 +6,7 @@ docker build -t app .
 
 docker build -t multi_stage -f Dockerfile_with_multi_stage .
 
-workflow file-
+simple workflow file-
 name: My First GitHub Actions
 on: [push]
 jobs:
