@@ -67,7 +67,6 @@ Create a new security group for the runners in the VPC. Only the inbound traffic
 Create a new GitHub Actions workflow or edit the existing one. We have a project which creates a docker container with multi stage builds. 
 Github repository - https://github.com/shivaniii23/python-multi-stage-github-actions.git
 We have “deploy.yml” file which has the job named ‘My First GitHub Actions’ which starts the EC2 runner on push, executes the job, and terminates the runner after everything.
-Make sure you don’t have a repository on the hub with the same name as this one.
  ![image](https://github.com/shivaniii23/python-multi-stage-github-actions/assets/54891990/38b7da6f-2322-42ff-a571-38913c0e79b4)
 ![image](https://github.com/shivaniii23/python-multi-stage-github-actions/assets/54891990/0bf275b5-33e4-4829-a3c5-6189d157bd0e)
 ![image](https://github.com/shivaniii23/python-multi-stage-github-actions/assets/54891990/f4b9ab4b-7ec3-4f7e-8095-4f17a2f6bd1d)
