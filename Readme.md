@@ -17,3 +17,4 @@ jobs:
     - name: Build and push image
       run: |
         docker build -t multi_stage -f Dockerfile_with_multi_stage .
+![image](https://github.com/shivaniii23/python_multi_stage/assets/54891990/9dc7b935-607b-4dfa-90d0-c1f350def7de)
