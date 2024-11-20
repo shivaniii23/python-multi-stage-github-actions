@@ -2,9 +2,6 @@
 version: 0.2
 
 phases: 
-  pre_build:
-    commands:
-      - cd python-multi-stage-github-actions
   build:
     commands:
       - echo "Building docker image"
