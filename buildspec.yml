@@ -1,0 +1,15 @@
+#this file is added to practice AWS for Webclues job
+version: 0.2
+
+phases: 
+  pre_build:
+    commands:
+      - cd python-multi-stage-github-actions
+  build:
+    commands:
+      - echo "Building docker image"
+      - docker build -t docker.io/shivanij2304/python-webclues .
+      - docker push docker.io/shivanij2304/python-webclues
+  post_build:
+    commands:
+    - echo "Build is successful."
