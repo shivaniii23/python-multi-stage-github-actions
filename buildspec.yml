@@ -6,7 +6,7 @@ phases:
     commands:
       - echo "Building docker image"
       - docker build -t docker.io/shivanij2304/python-webclues .
-      - echo Shivani@23 | docker login --username shivanij2304 --password-stdin
+      - echo  "pswd" | docker login --username shivanij2304 --password-stdin
       - docker push docker.io/shivanij2304/python-webclues
   post_build:
     commands:
